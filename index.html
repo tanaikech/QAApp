@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+
+  <div class="divider"></div>
+  <div class="section">
+    <h6>Put data to chunk into corpus</h6>
+    <div class="center">
+    <a class="waves-effect waves-light btn" id="manageChunks" onclick="manageChunks()"><i class="material-icons left">settings_applications</i>Manage chunk</a>
+    <div class="progress" id="progress" name="progress" style="display:none"><div class="indeterminate"></div></div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h6>Clear corpus</h6>
+    <div class="center">
+    <a class="waves-effect waves-light btn" id="clearCorpus" onclick="clearCorpus()"><i class="material-icons left">delete</i>Clear corpus</a>
+    <div class="progress" id="progress" name="progress" style="display:none"><div class="indeterminate"></div></div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h6>Get data from corpus</h6>
+    <div class="center">
+    <a class="waves-effect waves-light btn" id="getChunksAndUpdateDataSheet" onclick="getChunksAndUpdateDataSheet()"><i class="material-icons left">cloud_download</i>Get data from corpus</a>
+    <div class="progress" id="progress" name="progress" style="display:none"><div class="indeterminate"></div></div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h6>Generate answer</h6>
+    <div class="input-field">
+      <i class="material-icons prefix">question_answer</i>
+      <textarea id="question" class="materialize-textarea" name="question" required></textarea>
+      <label for="question">Please input your question.</label>
+    </div>
+    <div class="center">
+    <a class="waves-effect waves-light btn" id="generateAnswer" onclick="generateAnswer()"><i class="material-icons left">output</i>Generate answer</a>
+    <div class="progress" id="progress" name="progress" style="display:none"><div class="indeterminate"></div></div>
+    </div>
+  </div>
+  <div class="section">
+    <h6>Answer</h6>
+    <div class="input-field">
+      <i class="material-icons prefix">info</i>
+      <textarea id="answer" class="materialize-textarea" name="answer" rows="100%"></textarea>
+    </div>
+  </div>
+
+  <script><?!= javascript ?></script>
+
+  </body>
+</html>
